@@ -17,7 +17,7 @@ public class Book {
         this.year = year;
     }
 
-    // Getters and setters
+
     public int getId() {
         return id;
     }
