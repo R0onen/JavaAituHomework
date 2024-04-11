@@ -20,6 +20,7 @@ public class Main {
         fillArray(nums, 0);
         System.out.print(minimum(nums, 0, nums[0]));
     }
+    //O(n)
     public static int[] fillArray(int[] nums, int index){
         if(index >= nums.length){
             return nums;
@@ -27,6 +28,7 @@ public class Main {
         nums[index] = scanner.nextInt();
         return fillArray(nums, index+1);
     }
+    //O(n)
     public static int minimum(int[] nums, int index, int min){
         if(index >= nums.length){
             return min;
@@ -42,6 +44,7 @@ public class Main {
         fillArray(nums, 0);
         System.out.print(average(nums, 0, 0));
     }
+    //O(n)
     public static double average(int[] nums, int index, double sum){
         if(index >= nums.length){
             return sum/nums.length;
@@ -59,6 +62,7 @@ public class Main {
             System.out.print("Composite");
         }
     }
+    //O(n)
     public static boolean prime(int n, int divisor){
         if(n <= 1){
             return false;
@@ -75,6 +79,7 @@ public class Main {
         int n = scanner.nextInt();
         System.out.print(factorial(n));
     }
+    //O(n)
     public static long factorial(int n){
         if(n <= 1){
             return 1;
@@ -85,6 +90,7 @@ public class Main {
         int n = scanner.nextInt();
         System.out.print(fibonacci(n));
     }
+    //O(2^n)
     public static int fibonacci(int n){
         if(n <= 1){
             return n;
@@ -96,6 +102,7 @@ public class Main {
         int n = scanner.nextInt();
         System.out.print(degree(n, a));
     }
+    //O(n)
     public static int degree(int n, int a) {
         if (n == 0) {
             return 1;
@@ -115,6 +122,7 @@ public class Main {
             System.out.print("No");
         }
     }
+    //O(n)
     public static boolean onlyDigits(String str){
         if(str.isEmpty()){
             return true;
@@ -130,6 +138,7 @@ public class Main {
         int k = scanner.nextInt();
         System.out.print(binomial(n, k));
     }
+    //O(2^n)
     public static long binomial(int n, int k){
         if(k == 0 || k == n){
             return 1;
@@ -141,6 +150,7 @@ public class Main {
         int b = scanner.nextInt();
         System.out.print(gcd(a, b));
     }
+    //O(log(n))
     public static int gcd(int a, int b){
         if(a == 0){
             return b;
